@@ -14,6 +14,7 @@ remove_re = re.compile("[ .,']")
 replace_with_underscore = re.compile("[\-/()+]")
 replace_with_double_underscore = re.compile(" :: ")
 replace_hash_with_sharp = re.compile("[#]")
+replace_quote_with_backslash_quote = re.compile("'")
 with open("pyclassifiers/values.py", "w") as file_handle:
     for x in r.content.decode().split("\n"):
         if not x:
@@ -23,4 +24,6 @@ with open("pyclassifiers/values.py", "w") as file_handle:
         name = remove_re.sub('', name)
         name = replace_with_underscore.sub("_", name)
         name = replace_hash_with_sharp.sub("sharp", name)
-        file_handle.write("{} = '{}'\n".format(name, re.escape(x)))
+        value = x
+        value = replace_quote_with_backslash_quote.sub("\\'", value)
+        file_handle.write("{} = '{}'\n".format(name, value))

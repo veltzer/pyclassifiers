@@ -2,3 +2,4 @@
 # dev requirements
 pydmt
 pypitools
+requests

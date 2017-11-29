@@ -2,9 +2,10 @@
     import config.project
     import config.personal
     import config.version
-%>${'=' * (len(config.project.project_name)+2)}
+    line = '=' * (len(config.project.project_name)+2)
+%>${line}
 *${config.project.project_name}*
-${'=' * (len(config.project.project_name)+2)}
+${line}
 
 author: ${config.personal.personal_fullname}
 

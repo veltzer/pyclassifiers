@@ -4,7 +4,7 @@ import setuptools
 # noinspection PyPep8
 setuptools.setup(
     name='pyclassifiers',
-    version='0.0.1',
+    version='0.0.2',
     description='classifiers from pypi',
     long_description='classifiers from pypi',
     author='Mark Veltzer',

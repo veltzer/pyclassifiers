@@ -3,3 +3,4 @@
 pydmt
 pypitools
 requests
+pyclassifiers

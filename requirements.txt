@@ -1,5 +1,4 @@
-# setup requirements
-# production requirements
+# THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
 # dev requirements
 pydmt
 pypitools

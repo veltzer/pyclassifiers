@@ -1,7 +1,5 @@
-entry_points = {
-    'console_scripts': [
-    ],
-}
+console_scripts = [
+]
 install_requires = [
 ]
 dev_requires = [

@@ -1,5 +1,7 @@
 console_scripts = [
 ]
+setup_requires = [
+]
 install_requires = [
 ]
 dev_requires = [

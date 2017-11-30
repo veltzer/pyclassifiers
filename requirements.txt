@@ -1,0 +1,7 @@
+# setup requirements
+# production requirements
+# dev requirements
+pydmt
+pypitools
+requests
+pyclassifiers

@@ -1,13 +1,13 @@
 <%!
     import config.project
-    import config.personal
+    import user.personal
     import config.version
     line = '=' * (len(config.project.project_name)+2)
 %>${line}
 *${config.project.project_name}*
 ${line}
 
-author: ${config.personal.personal_fullname}
+author: ${user.personal.personal_fullname}
 
 version: ${config.version.version_str}
 

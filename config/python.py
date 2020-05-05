@@ -4,6 +4,8 @@ setup_requires = [
 ]
 install_requires = [
 ]
+test_requires = [
+]
 dev_requires = [
     'pydmt',  # for building
     'pypitools',  # for uploading

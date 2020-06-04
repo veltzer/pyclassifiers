@@ -9,3 +9,5 @@
 
 classifiers from pypi
 
+project website: https://veltzer.github.io/pyclassifiers
+

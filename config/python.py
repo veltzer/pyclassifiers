@@ -1,3 +1,7 @@
+import config.project
+
+package_name = config.project.project_name
+
 console_scripts = [
 ]
 setup_requires = [
@@ -13,3 +17,9 @@ dev_requires = [
     'pyclassifiers',  # for classifying the software
 ]
 requirements3 = install_requires 
+
+python_requires = ">=3.5"
+
+extras_require={
+#    ':python_version == "2.7"': ['futures'],  # for python2.7 backport of concurrent.futures
+}

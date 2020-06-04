@@ -1,8 +1,13 @@
 import setuptools
 
 setuptools.setup(
+    # the first three fields are a must according to the documentation
     name='pyclassifiers',
     version='0.0.3',
+    packages=[
+        'pyclassifiers',
+    ],
+    # from here all is optional
     description='classifiers from pypi',
     long_description='classifiers from pypi',
     author='Mark Veltzer',
@@ -10,31 +15,33 @@ setuptools.setup(
     maintainer='Mark Veltzer',
     maintainer_email='mark.veltzer@gmail.com',
     keywords=[
-        "classifiers",
-        "python",
-        "pypi",
-        "setuptools",
-        "distutils",
+        'classifiers',
+        'python',
+        'pypi',
+        'setuptools',
+        'distutils',
     ],
     url='https://veltzer.github.io/pyclassifiers',
     download_url='https://github.com/veltzer/pyclassifiers',
     license='MIT',
     platforms=[
-        "python3",
+        'python3',
     ],
-    packages=setuptools.find_packages(),
     install_requires=[
     ],
+    extras_require={
+    },
     classifiers=[
-        "Development Status :: 4 - Beta",
-        "Environment :: Console",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 3",
-        "Topic :: Utilities",
+        'Development Status :: 4 - Beta',
+        'Environment :: Console',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Topic :: Utilities',
     ],
     data_files=[
     ],
     entry_points={'console_scripts': [
     ]},
+    python_requires='>=3.5',
 )

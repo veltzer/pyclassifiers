@@ -24,7 +24,7 @@ setuptools.setup(
     ],
     url="https://veltzer.github.io/pyclassifiers",
     download_url="https://github.com/veltzer/pyclassifiers",
-    license="MIT",
+    # license="MIT",
     platforms=[
         'python3',
     ],
@@ -39,6 +39,7 @@ setuptools.setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
         'Topic :: Utilities',
+        'License :: OSI Approved :: MIT License',
     ],
     data_files=[
     ],

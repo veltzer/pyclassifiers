@@ -30,7 +30,7 @@ setuptools.setup(
     ],
     url="https://veltzer.github.io/pyclassifiers",
     download_url="https://github.com/veltzer/pyclassifiers",
-    # license="MIT",
+    license="MIT",
     platforms=[
         'python3',
     ],

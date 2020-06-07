@@ -44,6 +44,7 @@ setuptools.setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3 :: Only',
         'Topic :: Utilities',
         'License :: OSI Approved :: MIT License',
     ],

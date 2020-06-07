@@ -35,6 +35,7 @@ project_classifiers = [
     pyclassifiers.values.OperatingSystem__OSIndependent,
     pyclassifiers.values.ProgrammingLanguage__Python,
     pyclassifiers.values.ProgrammingLanguage__Python__3,
+    pyclassifiers.values.ProgrammingLanguage__Python__3__Only,
     pyclassifiers.values.Topic__Utilities,
     pyclassifiers.values.License__OSIApproved__MITLicense,
 ]

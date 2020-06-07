@@ -2,14 +2,20 @@
 
 # *pyclassifiers* project by Mark Veltzer
 
-![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
-![GitHub](https://img.shields.io/github/license/veltzer/pyclassifiers)
-![PyPI](https://img.shields.io/pypi/v/pyclassifiers)
+![PyPI - Status](https://img.shields.io/pypi/status/pyclassifiers)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyclassifiers)
+![PyPI - License](https://img.shields.io/pypi/l/pyclassifiers)
+![PyPI - Package Name](https://img.shields.io/pypi/v/pyclassifiers)
 ![PyPI - Format](https://img.shields.io/pypi/format/pyclassifiers)
-[![Downloads](https://pepy.tech/badge/pytsv)](https://pepy.tech/project/pyclassifiers)
-[![Downloads](https://pepy.tech/badge/pytsv/month)](https://pepy.tech/project/pyclassifiers/month)
-[![Downloads](https://pepy.tech/badge/pytsv/week)](https://pepy.tech/project/pyclassifiers/week)
 
+![PyPI - Downloads](https://img.shields.io/pypi/dd/pyclassifiers)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/pyclassifiers)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pyclassifiers)
+
+![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
+![Downloads](https://pepy.tech/badge/pyclassifiers)
+![Downloads](https://pepy.tech/badge/pyclassifiers/month)
+![Downloads](https://pepy.tech/badge/pyclassifiers/week)
 
 classifiers from pypi
 

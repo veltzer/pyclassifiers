@@ -18,7 +18,7 @@ dev_requires = [
 ]
 requirements3 = install_requires 
 
-python_requires = ">=3.5"
+python_requires = ">=3.6"
 
 extras_require = {
     # ':python_version == "2.7"': ['futures'],  # for python2.7 backport of concurrent.futures

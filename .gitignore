@@ -99,3 +99,4 @@ celerybeat-schedule
 /.mypy_cache/
 
 /.pydmt/
+/node_modules/

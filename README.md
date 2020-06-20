@@ -1,5 +1,4 @@
 
-
 # *pyclassifiers* project by Mark Veltzer
 
 ![PyPI - Status](https://img.shields.io/pypi/status/pyclassifiers)
@@ -17,7 +16,7 @@
 ![Downloads](https://pepy.tech/badge/pyclassifiers/month)
 ![Downloads](https://pepy.tech/badge/pyclassifiers/week)
 
+
 classifiers from pypi
 
-project website: https://veltzer.github.io/pyclassifiers
-
+project website: <https://veltzer.github.io/pyclassifiers>

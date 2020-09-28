@@ -16,6 +16,8 @@
 ![Downloads](https://pepy.tech/badge/pyclassifiers/month)
 ![Downloads](https://pepy.tech/badge/pyclassifiers/week)
 
+[![Known Vulnerabilities](https://snyk.io/test/github/veltzer/pyclassifiers/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/veltzer/pyclassifiers?targetFile=requirements.txt)
+
 
 
 classifiers from pypi

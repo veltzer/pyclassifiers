@@ -19,10 +19,13 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/veltzer/pyclassifiers/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/veltzer/pyclassifiers?targetFile=requirements.txt)
 
 
+Actions
+
+![build](https://github.com/veltzer/pyclassifiers/workflows/build/badge.svg)
 
 classifiers from pypi
 
-project website: <https://veltzer.github.io/pyclassifiers>
+project website: https://veltzer.github.io/pyclassifiers
 
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 

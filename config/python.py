@@ -13,6 +13,7 @@ test_requires = [
     "pytest-cov",  # for testing
     "pymakehelper",  # for the makefile
     "flake8",  # for linting
+    "pylint",  # for linting
 ]
 dev_requires = [
     'pydmt',  # for building

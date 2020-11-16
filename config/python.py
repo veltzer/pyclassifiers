@@ -9,6 +9,10 @@ setup_requires = [
 install_requires = [
 ]
 test_requires = [
+    "pytest",  # for testing
+    "pytest-cov",  # for testing
+    "pymakehelper",  # for the makefile
+    "flake8",  # for linting
 ]
 dev_requires = [
     'pydmt',  # for building
@@ -16,7 +20,7 @@ dev_requires = [
     'requests',  # for requesting
     'pyclassifiers',  # for classifying the software
 ]
-requirements3 = install_requires 
+requirements3 = install_requires
 
 python_requires = ">=3.6"
 

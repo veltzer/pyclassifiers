@@ -4,3 +4,8 @@ pydmt
 pypitools
 requests
 pyclassifiers
+# test requirements
+pytest
+pytest-cov
+pymakehelper
+flake8

@@ -9,22 +9,21 @@ setup_requires = [
 install_requires = [
 ]
 test_requires = [
-    "pytest",  # for testing
-    "pytest-cov",  # for testing
-    "pymakehelper",  # for the makefile
-    "flake8",  # for linting
-    "pylint",  # for linting
+    "pytest",
+    "pytest-cov",
+    "pymakehelper",
+    "flake8",
+    "pylint",
 ]
 dev_requires = [
-    'pydmt',  # for building
-    'pypitools',  # for uploading
-    'requests',  # for requesting
-    'pyclassifiers',  # for classifying the software
+    'pydmt',
+    'pypitools',
+    'requests',
+    'pyclassifiers',
 ]
 requirements3 = install_requires
 
 python_requires = ">=3.6"
 
 extras_require = {
-    # ':python_version == "2.7"': ['futures'],  # for python2.7 backport of concurrent.futures
 }

@@ -37,7 +37,7 @@ setuptools.setup(
     install_requires=[
     ],
     extras_require={
-    }},
+    },
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',

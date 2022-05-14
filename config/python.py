@@ -3,15 +3,20 @@ import config.project
 package_name = config.project.project_name
 
 dev_requires = [
-    "pydmt",
     "pypitools",
-    "requests",
+]
+make_requires = [
+    "pymakehelper",
+]
+config_requires = [
     "pyclassifiers",
+]
+install_requires = [
+    "requests",
 ]
 test_requires = [
     "pytest",
     "pytest-cov",
-    "pymakehelper",
     "flake8",
     "pylint",
 ]

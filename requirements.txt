@@ -1,12 +1,10 @@
 # THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
-# dev requirements
-pydmt
-pypitools
+# production requirements
 requests
-pyclassifiers
+# dev requirements
+pypitools
 # test requirements
 pytest
 pytest-cov
-pymakehelper
 flake8
 pylint

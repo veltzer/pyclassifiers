@@ -4,7 +4,7 @@ project website: https://veltzer.github.io/pyclassifiers
 
 author: Mark Veltzer
 
-version: 0.0.6
+version: 0.0.7
 
 ![PyPI - Status](https://img.shields.io/pypi/status/pyclassifiers)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyclassifiers)

@@ -1,5 +1,11 @@
 # *pyclassifiers* project by Mark Veltzer
 
+project website: https://veltzer.github.io/pyclassifiers
+
+author: Mark Veltzer
+
+version: 0.0.6
+
 ![PyPI - Status](https://img.shields.io/pypi/status/pyclassifiers)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyclassifiers)
 ![PyPI - License](https://img.shields.io/pypi/l/pyclassifiers)
@@ -20,3 +26,5 @@ project website: https://veltzer.github.io/pyclassifiers
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
 
+
+	Mark Veltzer <mark.veltzer@gmail.com>, 2017, 2018, 2019, 2020, 2021

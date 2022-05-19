@@ -3,7 +3,7 @@
     import user.personal
 %>MIT License
 
-Copyright (c) ${pydmt.helpers.signature.get_project_year_started()} ${user.personal.personal_fullname}
+Copyright (c) ${pydmt.helpers.signature.get_project_year_started()} ${user.personal.fullname}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

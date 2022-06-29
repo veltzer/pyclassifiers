@@ -16,4 +16,5 @@ test_requires = [
     "pytest-cov",
     "flake8",
     "pylint",
+    "mypy",
 ]

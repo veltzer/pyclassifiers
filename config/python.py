@@ -17,4 +17,5 @@ test_requires = [
     "flake8",
     "pylint",
     "mypy",
+    "types-requests",
 ]

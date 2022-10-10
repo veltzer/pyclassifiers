@@ -3,7 +3,6 @@
 requests
 # dev requirements
 pypitools
-pydmt
 # test requirements
 pytest
 pytest-cov

@@ -1,12 +1,3 @@
 # THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
 # production requirements
 requests
-# dev requirements
-pypitools
-# test requirements
-pytest
-pytest-cov
-flake8
-pylint
-mypy
-types-requests

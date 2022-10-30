@@ -16,25 +16,25 @@ documentation = "https://TemplateDemo.readthedocs.io"
 repository = "https://github.com/jacebrowning/template-python-demo"
 
 keywords = [
-    'classifiers',
-    'python',
-    'pypi',
-    'setuptools',
-    'distutils',
+    "classifiers",
+    "python",
+    "pypi",
+    "setuptools",
+    "distutils",
 ]
 
 classifiers = [
-    'Development Status :: 4 - Beta',
-    'Environment :: Console',
-    'Operating System :: OS Independent',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3 :: Only',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    'Programming Language :: Python :: 3.10',
-    'Topic :: Utilities',
-    'License :: OSI Approved :: MIT License',
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: MIT License",
 ]
 
 [tool.poetry.dependencies]

@@ -23,8 +23,7 @@ packages = [{ include = "${pydmt.helpers.project.get_name()}" }]
 
 license = "${pydmt.helpers.python.get_license_type()}"
 authors = [
-	name = "${user.personal.fullname}",
-	email = "${user.personal.email}",
+	{ name = "${user.personal.fullname}", email = "${user.personal.email}", }
 ]
 
 % if os.path.isfile("README.rst"):

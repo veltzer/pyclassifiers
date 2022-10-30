@@ -11,8 +11,7 @@ packages = [{ include = "pyclassifiers" }]
 
 license = "MIT"
 authors = [
-	name = "Mark Veltzer",
-	email = "mark.veltzer@gmail.com",
+	{ name = "Mark Veltzer", email = "mark.veltzer@gmail.com", }
 ]
 
 readme = "README.rst"

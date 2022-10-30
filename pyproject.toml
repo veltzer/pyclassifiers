@@ -1,19 +1,21 @@
-[tool.poetry]
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
 
+[project]
 name = "pyclassifiers"
-version = "0.0.7"
 description = "classifiers from pypi"
+version = "0.0.7"
 
 packages = [{ include = "pyclassifiers" }]
 
 license = "MIT"
-authors = ["Mark Veltzer"]
+authors = [
+	name = "Mark Veltzer",
+	email = "mark.veltzer@gmail.com",
+]
 
 readme = "README.rst"
-
-homepage = "https://pypi.org/project/TemplateDemo"
-documentation = "https://TemplateDemo.readthedocs.io"
-repository = "https://github.com/jacebrowning/template-python-demo"
 
 keywords = [
     "classifiers",
@@ -37,86 +39,11 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 
-[tool.poetry.dependencies]
+requires-python = ">=3.8"
 
-python = "^3.9"
+dependencies = [
+]
 
-# TODO: Remove these and add your library's requirements
-click = "*"
-minilog = "*"
+[project.optional-dependencies]
+dev = ['pypitools', 'requests']
 
-[tool.poetry.dev-dependencies]
-
-# Formatters
-black = "^22.1"
-isort = "^5.10"
-
-# Linters
-mypy = "~0.931"
-pydocstyle = "^6.1"
-pylint = "~2.12.2"
-types-setuptools = "*"
-
-# Testing
-pytest = "^7.1"
-pytest-describe = "^2.0"
-pytest-expecter = "^3.0"
-pytest-random = "*"
-pytest-cov = "^3.0"
-freezegun = "*"
-
-# Reports
-coveragespace = "^6.0"
-
-# Documentation
-mkdocs = "~1.3"
-pygments = "^2.11.1"
-
-# Tooling
-pyinstaller = "*"
-sniffer = "*"
-MacFSEvents = { version = "*", platform = "darwin" }
-pync = { version = "*", platform = "darwin" }
-ipython = "^7.12.0"
-
-[tool.poetry.scripts]
-
-TemplateDemo = "demo.cli:main"
-
-[tool.black]
-
-quiet = true
-
-[tool.isort]
-
-profile = "black"
-
-[tool.mypy]
-
-ignore_missing_imports = true
-no_implicit_optional = true
-check_untyped_defs = true
-
-cache_dir = ".cache/mypy/"
-
-[tool.pytest.ini_options]
-
-addopts = """
---strict-markers
-
--r sxX
---show-capture=log
-
---cov-report=html
---cov-report=term-missing:skip-covered
---no-cov-on-fail
-"""
-
-cache_dir = ".cache/pytest/"
-
-markers = []
-
-[build-system]
-
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"

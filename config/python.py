@@ -1,5 +1,6 @@
 dev_requires = [
     "pypitools",
+    "requests",
 ]
 make_requires = [
     "pymakehelper",
@@ -8,9 +9,6 @@ make_requires = [
 ]
 config_requires = [
     "pyclassifiers",
-]
-install_requires = [
-    "requests",
 ]
 test_requires = [
     "pytest",

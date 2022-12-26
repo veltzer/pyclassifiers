@@ -12,6 +12,6 @@ project website: https://veltzer.github.io/pyclassifiers
 
 author: Mark Veltzer
 
-version: 0.0.9
+version: 0.0.10
 
 	Mark Veltzer <mark.veltzer@gmail.com>, Copyright © 2017, 2018, 2019, 2020, 2021, 2022

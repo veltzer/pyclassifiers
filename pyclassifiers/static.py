@@ -1,5 +1,5 @@
 """ version which can be consumed from within the module """
-VERSION_STR = "0.0.9"
+VERSION_STR = "0.0.10"
 DESCRIPTION = "classifiers from pypi"
 APP_NAME = "pyclassifiers"
 LOGGER_NAME = "pyclassifiers"

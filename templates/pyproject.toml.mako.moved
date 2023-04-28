@@ -5,7 +5,7 @@
     import pydmt.helpers.urls
     import config.python
     import default.python
-    import user.personal
+    import config.personal
     import config.project
     import config.version
     import pydmt.helpers.python
@@ -23,7 +23,7 @@ packages = [{ include = "${pydmt.helpers.project.get_name()}" }]
 
 license = "${pydmt.helpers.python.get_license_type()}"
 authors = [
-	{ name = "${user.personal.fullname}", email = "${user.personal.email}", }
+	{ name = "${config.personal.fullname}", email = "${config.personal.email}", }
 ]
 
 % if os.path.isfile("README.rst"):

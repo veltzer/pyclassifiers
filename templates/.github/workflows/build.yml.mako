@@ -20,6 +20,8 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${"${{ matrix.python-version }}"}
+    - name: check_git
+      run: which git
     - name: bootstrap-pip
       run: python -m pip install --upgrade pip
     - name: bootstrap

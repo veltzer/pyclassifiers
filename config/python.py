@@ -2,12 +2,13 @@ dev_requires = [
     "pypitools",
     "requests",
 ]
+config_requires = [
+    "pyclassifiers",
+]
+install_requires = []
 make_requires = [
     "pymakehelper",
     "pydmt",
-    "pyclassifiers",
-]
-config_requires = [
     "pyclassifiers",
 ]
 test_requires = [
@@ -18,3 +19,4 @@ test_requires = [
     "mypy",
     "types-requests",
 ]
+requires = config_requires + install_requires + make_requires + test_requires

@@ -1,17 +1,20 @@
-dev_requires = [
+from typing import List
+
+
+dev_requires: List[str] = [
     "pypitools",
     "requests",
 ]
-config_requires = [
+config_requires: List[str] = [
     "pyclassifiers",
 ]
-install_requires = []
-make_requires = [
+install_requires: List[str] = []
+make_requires: List[str] = [
     "pymakehelper",
     "pydmt",
     "pyclassifiers",
 ]
-test_requires = [
+test_requires: List[str] = [
     "pytest",
     "pytest-cov",
     "flake8",

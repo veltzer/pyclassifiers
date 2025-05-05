@@ -16,6 +16,7 @@ replace_with_double_underscore = re.compile(" :: ")
 replace_hash_with_sharp = re.compile("[#]")
 replace_quote_with_backslash_quote = re.compile("'")
 with open("pyclassifiers/values.py", "w") as file_handle:
+    file_handle.write("\"\"\" values file \"\"\"\n");
     for x in r.content.decode().split("\n"):
         if not x:
             continue

@@ -4,7 +4,7 @@ import pyclassifiers.values
 
 python_requires = ">=3.12"
 
-license_type = "MIT AND (Apache-2.0 OR BSD-2-Clause)"
+license_type = "MIT"
 
 platforms = [
     "python3",

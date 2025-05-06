@@ -9,7 +9,7 @@ def get_readme():
 setuptools.setup(
     # the first three fields are a must according to the documentation
     name="pyclassifiers",
-    version="0.0.18",
+    version="0.0.19",
     packages=[
         "pyclassifiers",
     ],
@@ -30,7 +30,7 @@ setuptools.setup(
     ],
     url="https://veltzer.github.io/pyclassifiers",
     download_url="https://github.com/veltzer/pyclassifiers",
-    license="MIT AND (Apache-2.0 OR BSD-2-Clause)",
+    license="MIT",
     platforms=[
         "python3",
     ],

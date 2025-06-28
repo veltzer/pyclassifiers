@@ -10,9 +10,9 @@ build_requires: list[str] = [
 ]
 test_requires: list[str] = [
     "pytest",
-    "pytest-cov",
     "pylint",
     "mypy",
+    "ruff",
     # types
     "types-requests",
 ]

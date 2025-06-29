@@ -4,8 +4,11 @@ config_requires: list[str] = [
     "pyclassifiers",
 ]
 build_requires: list[str] = [
+    "hatch",
     "pydmt",
     "pymakehelper",
+    "pycmdtools",
+    # modules
     "requests",
 ]
 test_requires: list[str] = [

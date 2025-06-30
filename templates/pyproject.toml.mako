@@ -35,11 +35,11 @@ dependencies = ${pydmt.helpers.python.array_indented(0, config.python.install_re
 % endif
 
 [project.urls]
-"Homepage" = "${pydmt.helpers.urls.get_website_source()}"
+Homepage = "${pydmt.helpers.urls.get_website_source()}"
 "Bug Tracker" = "${pydmt.helpers.urls.get_website_source()}/issues"
-"Documentation" = "${pydmt.helpers.urls.get_website()}"
-"Download" = "https://pypi.org/project/${config.project.name}/"
-"Repository" = "${pydmt.helpers.urls.get_website_source()}"
+Documentation = "${pydmt.helpers.urls.get_website()}"
+Download = "https://pypi.org/project/${config.project.name}/"
+Repository = "${pydmt.helpers.urls.get_website_source()}"
 
 % if hasattr(config.python, "scripts"):
 [project.scripts]
@@ -74,6 +74,5 @@ exclude = [
 ]
 
 [tool.mypy]
-python_version = "3.12"
 warn_return_any = true
 warn_unused_configs = true

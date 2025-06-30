@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyclassifiers"
-version = "0.0.19"
+version = "0.0.20"
 requires-python = ">=3.12"
 authors = [
 	{ name = "Mark Veltzer", email = "mark.veltzer@gmail.com" }
@@ -66,3 +66,8 @@ exclude = [
     "config/",
     "*.md",
 ]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true

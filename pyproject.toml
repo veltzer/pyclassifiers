@@ -35,11 +35,11 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/veltzer/pyclassifiers"
+"Homepage" = "https://github.com/veltzer/pyclassifiers"
 "Bug Tracker" = "https://github.com/veltzer/pyclassifiers/issues"
-Documentation = "https://veltzer.github.io/pyclassifiers"
-Download = "https://pypi.org/project/pyclassifiers/"
-Repository = "https://github.com/veltzer/pyclassifiers"
+"Documentation" = "https://veltzer.github.io/pyclassifiers"
+"Download" = "https://pypi.org/project/pyclassifiers/"
+"Repository" = "https://github.com/veltzer/pyclassifiers"
 
 
 [tool.ruff]
@@ -68,5 +68,6 @@ exclude = [
 ]
 
 [tool.mypy]
+python_version = "3.12"
 warn_return_any = true
 warn_unused_configs = true

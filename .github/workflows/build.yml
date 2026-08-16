@@ -21,12 +21,18 @@ jobs:
         restore-keys: |
           rsconstruct-${{ runner.os }}-
     - name: install rsconstruct
+      # Pinned deliberately: the templates in tera.templates/ use rsconstruct
+      # features (e.g. toml_get) that only exist from this version on. Tracking
+      # the floating "latest" release means a push can race ahead of the release
+      # that implements what its templates call, which is exactly how this build
+      # broke before. Bump this when a template starts needing a newer feature.
       run: |
-        gh release download --repo veltzer/rsconstruct --pattern 'rsconstruct-linux-x86_64' --output /usr/local/bin/rsconstruct
+        gh release download "$RSCONSTRUCT_VERSION" --repo veltzer/rsconstruct --pattern 'rsconstruct-linux-x86_64' --output /usr/local/bin/rsconstruct
         chmod +x /usr/local/bin/rsconstruct
         rsconstruct version
       env:
         GH_TOKEN: ${{ github.token }}
+        RSCONSTRUCT_VERSION: v0.9.54
     - name: install
       run: |
         rsconstruct tools install-deps

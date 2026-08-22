@@ -8,8 +8,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      # needed by the stale-pages-artifact cleanup below
+      actions: write
+    outputs:
+      pages-dir: ${{ steps.pages.outputs.dir }}
     steps:
     - uses: actions/checkout@v6
+      with:
+        # A no-op in repos without submodules, so every repo shares this
+        # exact file.
+        submodules: recursive
     - uses: actions/cache@v5
       with:
         path: .rsconstruct
@@ -21,18 +31,12 @@ jobs:
         restore-keys: |
           rsconstruct-${{ runner.os }}-
     - name: install rsconstruct
-      # Pinned deliberately: the templates in tera.templates/ use rsconstruct
-      # features (e.g. toml_get) that only exist from this version on. Tracking
-      # the floating "latest" release means a push can race ahead of the release
-      # that implements what its templates call, which is exactly how this build
-      # broke before. Bump this when a template starts needing a newer feature.
       run: |
-        gh release download "$RSCONSTRUCT_VERSION" --repo veltzer/rsconstruct --pattern 'rsconstruct-linux-x86_64' --output /usr/local/bin/rsconstruct
+        gh release download --repo veltzer/rsconstruct --pattern 'rsconstruct-linux-x86_64' --output /usr/local/bin/rsconstruct
         chmod +x /usr/local/bin/rsconstruct
         rsconstruct version
       env:
         GH_TOKEN: ${{ github.token }}
-        RSCONSTRUCT_VERSION: v0.9.54
     - name: install
       run: |
         rsconstruct tools install-deps
@@ -41,3 +45,41 @@ jobs:
       run: rsconstruct build
     - name: status
       run: rsconstruct status
+    - name: pages dir
+      # Empty when [pages] is not configured in rsconstruct.toml; the upload
+      # step and the deploy job skip on empty, which is what lets Pages and
+      # non-Pages repos share this exact file.
+      id: pages
+      run: echo "dir=$(rsconstruct pages dir)" >> "$GITHUB_OUTPUT"
+    - name: delete stale pages artifact
+      # Artifacts survive re-run attempts, and both the upload and
+      # deploy-pages fail hard when a "github-pages" artifact already exists
+      # in the run. Delete any leftover from a previous attempt first.
+      if: steps.pages.outputs.dir != ''
+      run: |
+        gh api --paginate "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+          --jq '.artifacts[] | select(.name == "github-pages") | .id' |
+        while read -r artifact_id; do
+          echo "deleting stale artifact $artifact_id"
+          gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$artifact_id"
+        done
+      env:
+        GH_TOKEN: ${{ github.token }}
+    - uses: actions/upload-pages-artifact@v5
+      if: steps.pages.outputs.dir != ''
+      with:
+        path: ${{ steps.pages.outputs.dir }}
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.pages-dir != ''
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - uses: actions/deploy-pages@v5
+      id: deployment

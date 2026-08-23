@@ -8,7 +8,7 @@ project website: https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAM
 
 author: {{ personal.FULLNAME }}
 
-version: {{ toml_get(path="pyproject.toml", key="project.version") }}
+version: {{ version_str(path="config/version.lua") }}
 
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 

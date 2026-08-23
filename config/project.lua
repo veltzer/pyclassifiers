@@ -7,3 +7,4 @@ KEYWORDS = {
     "setuptools",
     "distutils",
 }
+PYPI = true

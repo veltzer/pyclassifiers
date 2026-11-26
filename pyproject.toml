@@ -85,10 +85,6 @@ search-path = [
     "scripts",
     ".",
 ]
-# Third-party libraries without type information.
-ignore-missing-imports = [
-    "pyclassifiers.*",
-]
 
 [tool.pyrefly.errors]
 no-any-return = "error"
